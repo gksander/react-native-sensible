@@ -34,10 +34,7 @@ export default function App() {
         title={pause ? 'Start' : 'Pause'}
         onPress={() => setPause((v) => !v)}
       />
-      <View
-        ref={ref}
-        style={{ width: 200, height: 200, backgroundColor: 'red' }}
-      />
+      <View ref={ref} style={styles.box} />
     </View>
   );
 }
@@ -48,9 +45,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
+  box: { width: 200, height: 200, backgroundColor: 'red' },
 });
